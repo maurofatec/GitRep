@@ -4,11 +4,12 @@
              xmlns:local="clr-namespace:App1_ConsultarCEP"
              x:Class="App1_ConsultarCEP.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30"><!--  o content page permite somente um elemento e o stacklayout permite vários elementos dentro dele-->
+        <Image Source="image.png" x:Name="Logo"/>
+        <Entry Placeholder="Digite o CEP" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#00416B" x:Name="Bt_BuscarCEP" />
+        <Label Text="" x:Name="Resultado"/>
+
     </StackLayout>
 
 </ContentPage>
